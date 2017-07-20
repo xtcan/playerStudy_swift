@@ -1,0 +1,6 @@
+framework module Pods_TCVideo_Study {
+  umbrella header "Pods-TCVideo_Study-umbrella.h"
+
+  export *
+  module * { export * }
+}

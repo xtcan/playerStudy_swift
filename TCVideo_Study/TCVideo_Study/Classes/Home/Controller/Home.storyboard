@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Koq-TY-e2N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--主页-->
+        <scene sceneID="27L-z5-5Y0">
+            <objects>
+                <viewController id="Cma-Lo-AL7" customClass="HomeViewController" customModule="TCVideo_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ion-on-QaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="f9k-np-Z8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qxp-7Q-xZn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="主页" image="live-n" selectedImage="live-p" id="LFz-sz-h2l"/>
+                    <navigationItem key="navigationItem" id="FPD-fC-Psc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hn-Q9-ga1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="115"/>
+        </scene>
+        <!--Nav View Controller-->
+        <scene sceneID="Rri-9G-K76">
+            <objects>
+                <navigationController id="Koq-TY-e2N" customClass="NavViewController" customModule="TCVideo_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mPB-5Y-07g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Cma-Lo-AL7" kind="relationship" relationship="rootViewController" id="G3o-eX-2It"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbb-LC-ov4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="live-n" width="25" height="19"/>
+        <image name="live-p" width="25" height="19"/>
+    </resources>
+</document>

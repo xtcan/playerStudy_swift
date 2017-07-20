@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>热点</string>
+		<key>type</key>
+		<integer>6</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>搞笑哈哈频道</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>音乐</string>
+		<key>type</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>体育</string>
+		<key>type</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>娱乐抢先看</string>
+		<key>type</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>搞笑</string>
+		<key>type</key>
+		<integer>8</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>啦啦啦</string>
+		<key>type</key>
+		<integer>7</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>还有更多</string>
+		<key>type</key>
+		<integer>3</integer>
+	</dict>
+</array>
+</plist>
