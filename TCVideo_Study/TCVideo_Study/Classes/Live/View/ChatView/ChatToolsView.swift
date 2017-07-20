@@ -52,6 +52,8 @@ extension ChatToolsView {
     
     fileprivate func setupUI(){
         
+        //注：textfield显示不了表情attachment，用textview才可以
+        
         //测试: 让textFiled显示`富文本`
 //         let attrString = NSAttributedString(string: "I am fine", attributes: [NSForegroundColorAttributeName : UIColor.green])
 //         let attachment = NSTextAttachment()

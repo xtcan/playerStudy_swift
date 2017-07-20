@@ -81,7 +81,7 @@ extension TCInputIconChooseView{
         //创建titleview
         let titleY = isTitleInTop ? 0 : bounds.height - style.titleViewHeight
         let titleFrame = CGRect(x: 0, y: titleY, width: bounds.width, height: style.titleViewHeight)
-        
+        style.isScrollEnable = false
         titleView = TCTitleView.init(frame: titleFrame, titles: titles, style: style)
         addSubview(titleView)
         titleView.delegate = self
