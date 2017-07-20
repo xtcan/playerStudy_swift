@@ -17,6 +17,8 @@
 		D5116A0D1F1DE3D7006C9844 /* EmotionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5116A0B1F1DE3D7006C9844 /* EmotionViewCell.swift */; };
 		D5116A0E1F1DE3D7006C9844 /* EmotionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5116A0C1F1DE3D7006C9844 /* EmotionViewCell.xib */; };
 		D5116A101F1DE424006C9844 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5116A0F1F1DE424006C9844 /* ChatToolsView.xib */; };
+		D51837C71F20A436001AA805 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51837C51F20A436001AA805 /* RoomViewController.swift */; };
+		D51837C81F20A436001AA805 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51837C61F20A436001AA805 /* RoomViewController.xib */; };
 		D52EDFF41F1F6A01001E98E2 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52EDFF21F1F6A01001E98E2 /* QHNormalEmotionSort.plist */; };
 		D52EDFF51F1F6A01001E98E2 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = D52EDFF31F1F6A01001E98E2 /* QHSohuGifSort.plist */; };
 		D52EDFFA1F1F6A5D001E98E2 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52EDFF61F1F6A5D001E98E2 /* Emotion.swift */; };
@@ -48,8 +50,6 @@
 		D5F663341ED9674E00DD8E38 /* HomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F663331ED9674E00DD8E38 /* HomeContentCell.swift */; };
 		D5F663361ED9676C00DD8E38 /* HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F663351ED9676C00DD8E38 /* HomeContentCell.xib */; };
 		D5F663381ED96E0500DD8E38 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F663371ED96E0500DD8E38 /* HomeViewModel.swift */; };
-		D5F6633F1ED9819700DD8E38 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6633D1ED9819700DD8E38 /* RoomViewController.swift */; };
-		D5F663401ED9819700DD8E38 /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F6633E1ED9819700DD8E38 /* RoomViewController.xib */; };
 		D5F663431ED9828C00DD8E38 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F663421ED9828C00DD8E38 /* Emitterable.swift */; };
 		D5FFF66D1ED8353700FEF6DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D5FFF66C1ED8353700FEF6DB /* Podfile */; };
 		D5FFF68C1ED83AED00FEF6DB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FFF68B1ED83AED00FEF6DB /* Const.swift */; };
@@ -73,6 +73,8 @@
 		D5116A0B1F1DE3D7006C9844 /* EmotionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewCell.swift; sourceTree = "<group>"; };
 		D5116A0C1F1DE3D7006C9844 /* EmotionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmotionViewCell.xib; sourceTree = "<group>"; };
 		D5116A0F1F1DE424006C9844 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		D51837C51F20A436001AA805 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		D51837C61F20A436001AA805 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 		D52EDFF21F1F6A01001E98E2 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		D52EDFF31F1F6A01001E98E2 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		D52EDFF61F1F6A5D001E98E2 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
@@ -106,8 +108,6 @@
 		D5F663331ED9674E00DD8E38 /* HomeContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContentCell.swift; sourceTree = "<group>"; };
 		D5F663351ED9676C00DD8E38 /* HomeContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeContentCell.xib; sourceTree = "<group>"; };
 		D5F663371ED96E0500DD8E38 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		D5F6633D1ED9819700DD8E38 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomViewController.swift; path = ../RoomViewController.swift; sourceTree = "<group>"; };
-		D5F6633E1ED9819700DD8E38 /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoomViewController.xib; path = ../RoomViewController.xib; sourceTree = "<group>"; };
 		D5F663421ED9828C00DD8E38 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		D5FFF66C1ED8353700FEF6DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D5FFF68B1ED83AED00FEF6DB /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -183,6 +183,15 @@
 				D5116A0C1F1DE3D7006C9844 /* EmotionViewCell.xib */,
 			);
 			path = ChatView;
+			sourceTree = "<group>";
+		};
+		D51837C41F20A436001AA805 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D51837C51F20A436001AA805 /* RoomViewController.swift */,
+				D51837C61F20A436001AA805 /* RoomViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D52EDFFE1F1F6C52001E98E2 /* ViewModel */ = {
@@ -373,21 +382,12 @@
 		D5F663391ED9814500DD8E38 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				D51837C41F20A436001AA805 /* Controller */,
 				D52EDFFE1F1F6C52001E98E2 /* ViewModel */,
-				D5F6633A1ED9817B00DD8E38 /* Controller */,
 				D5F6633B1ED9817B00DD8E38 /* Model */,
 				D5F6633C1ED9817B00DD8E38 /* View */,
 			);
 			path = Live;
-			sourceTree = "<group>";
-		};
-		D5F6633A1ED9817B00DD8E38 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D5F6633D1ED9819700DD8E38 /* RoomViewController.swift */,
-				D5F6633E1ED9819700DD8E38 /* RoomViewController.xib */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		D5F6633B1ED9817B00DD8E38 /* Model */ = {
@@ -505,6 +505,7 @@
 				D5EB25A11ED2E7A50094BBE2 /* Profile.storyboard in Resources */,
 				D5EB25A31ED2E7B20094BBE2 /* Rank.storyboard in Resources */,
 				D52EDFF41F1F6A01001E98E2 /* QHNormalEmotionSort.plist in Resources */,
+				D51837C81F20A436001AA805 /* RoomViewController.xib in Resources */,
 				D52EDFF51F1F6A01001E98E2 /* QHSohuGifSort.plist in Resources */,
 				D5FFF66D1ED8353700FEF6DB /* Podfile in Resources */,
 				D5F662C21ED92E7C00DD8E38 /* types.plist in Resources */,
@@ -515,7 +516,6 @@
 				D50633D21EFBA265009AA0AB /* GiftListView.xib in Resources */,
 				D5EB259D1ED2E75D0094BBE2 /* Discover.storyboard in Resources */,
 				D5EB25881ED2E68C0094BBE2 /* Assets.xcassets in Resources */,
-				D5F663401ED9819700DD8E38 /* RoomViewController.xib in Resources */,
 				D5EB25861ED2E68C0094BBE2 /* Main.storyboard in Resources */,
 				D5F662BA1ED9229900DD8E38 /* Home.storyboard in Resources */,
 			);
@@ -580,7 +580,6 @@
 				D52EDFFA1F1F6A5D001E98E2 /* Emotion.swift in Sources */,
 				D50051601ED4168E00554738 /* UIColor-Extension.swift in Sources */,
 				D5116A0D1F1DE3D7006C9844 /* EmotionViewCell.swift in Sources */,
-				D5F6633F1ED9819700DD8E38 /* RoomViewController.swift in Sources */,
 				D52EDFFC1F1F6A5D001E98E2 /* GiftModel.swift in Sources */,
 				D5F663381ED96E0500DD8E38 /* HomeViewModel.swift in Sources */,
 				D5FFF6951ED83C0E00FEF6DB /* TCTitleView.swift in Sources */,
@@ -590,6 +589,7 @@
 				D5F662BF1ED9231000DD8E38 /* WaterfallViewController.swift in Sources */,
 				D5F663431ED9828C00DD8E38 /* Emitterable.swift in Sources */,
 				D5F663341ED9674E00DD8E38 /* HomeContentCell.swift in Sources */,
+				D51837C71F20A436001AA805 /* RoomViewController.swift in Sources */,
 				D5FFF6941ED83C0E00FEF6DB /* TCPageView.swift in Sources */,
 				D5E6C4031EF915EF00383200 /* NibLoadable.swift in Sources */,
 				D5EB259B1ED2E73D0094BBE2 /* MainViewController.swift in Sources */,
