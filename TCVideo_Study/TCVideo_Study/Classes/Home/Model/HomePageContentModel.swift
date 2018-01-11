@@ -28,7 +28,7 @@ class HomePageContentModel: BaseModel {
     "gameIcon": "",
     "gameId": 0
     */
-    
+    var uid : String = ""
     var roomid : Int = 0
     var name : String = ""
     var pic51 : String = ""

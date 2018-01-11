@@ -39,6 +39,9 @@
 		D5EB25A11ED2E7A50094BBE2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EB25A01ED2E7A50094BBE2 /* Profile.storyboard */; };
 		D5EB25A31ED2E7B20094BBE2 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EB25A21ED2E7B20094BBE2 /* Rank.storyboard */; };
 		D5EB25A51ED2F5950094BBE2 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EB25A41ED2F5950094BBE2 /* NavViewController.swift */; };
+		D5F53EEB200605310061B2C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F53EEA200605310061B2C8 /* libz.tbd */; };
+		D5F53EEF200605500061B2C8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F53EEE200605500061B2C8 /* libsqlite3.0.tbd */; };
+		D5F53EF6200607680061B2C8 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F53EF5200607680061B2C8 /* RoomViewModel.swift */; };
 		D5F662BA1ED9229900DD8E38 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F662B81ED9229900DD8E38 /* Home.storyboard */; };
 		D5F662BB1ED9229900DD8E38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F662B91ED9229900DD8E38 /* HomeViewController.swift */; };
 		D5F662BD1ED922DB00DD8E38 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F662BC1ED922DB00DD8E38 /* WaterfallLayout.swift */; };
@@ -97,6 +100,10 @@
 		D5EB25A01ED2E7A50094BBE2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D5EB25A21ED2E7B20094BBE2 /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
 		D5EB25A41ED2F5950094BBE2 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		D5F53EEA200605310061B2C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D5F53EEC200605410061B2C8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D5F53EEE200605500061B2C8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D5F53EF5200607680061B2C8 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 		D5F662B81ED9229900DD8E38 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D5F662B91ED9229900DD8E38 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D5F662BC1ED922DB00DD8E38 /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
@@ -123,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F53EEF200605500061B2C8 /* libsqlite3.0.tbd in Frameworks */,
+				D5F53EEB200605310061B2C8 /* libz.tbd in Frameworks */,
 				DC81356E751256B0B88B5216 /* Pods_TCVideo_Study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +151,9 @@
 		7BECF2FFD2D545AB5CE7F592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5F53EEE200605500061B2C8 /* libsqlite3.0.tbd */,
+				D5F53EEC200605410061B2C8 /* libsqlite3.tbd */,
+				D5F53EEA200605310061B2C8 /* libz.tbd */,
 				58A91BD2F669B23BC71F23D2 /* Pods_TCVideo_Study.framework */,
 			);
 			name = Frameworks;
@@ -198,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				D52EDFFF1F1F6D3F001E98E2 /* EmotionViewModel.swift */,
+				D5F53EF5200607680061B2C8 /* RoomViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -324,6 +337,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		D5F53EF22006069D0061B2C8 /* IJKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IJKPlayer;
+			sourceTree = "<group>";
+		};
 		D5F662B41ED9225700DD8E38 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +384,7 @@
 		D5F662C01ED92E6900DD8E38 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D5F53EF22006069D0061B2C8 /* IJKPlayer */,
 				D52EDFF21F1F6A01001E98E2 /* QHNormalEmotionSort.plist */,
 				D52EDFF31F1F6A01001E98E2 /* QHSohuGifSort.plist */,
 				D5F662C11ED92E7C00DD8E38 /* types.plist */,
@@ -581,6 +602,7 @@
 				D50051601ED4168E00554738 /* UIColor-Extension.swift in Sources */,
 				D5116A0D1F1DE3D7006C9844 /* EmotionViewCell.swift in Sources */,
 				D52EDFFC1F1F6A5D001E98E2 /* GiftModel.swift in Sources */,
+				D5F53EF6200607680061B2C8 /* RoomViewModel.swift in Sources */,
 				D5F663381ED96E0500DD8E38 /* HomeViewModel.swift in Sources */,
 				D5FFF6951ED83C0E00FEF6DB /* TCTitleView.swift in Sources */,
 				D5F6632E1ED9590700DD8E38 /* BaseModel.swift in Sources */,
@@ -734,6 +756,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6768J84GN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TCVideo_Study/Resource/IJKPlayer",
+				);
 				INFOPLIST_FILE = TCVideo_Study/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -749,6 +776,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6768J84GN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TCVideo_Study/Resource/IJKPlayer",
+				);
 				INFOPLIST_FILE = TCVideo_Study/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

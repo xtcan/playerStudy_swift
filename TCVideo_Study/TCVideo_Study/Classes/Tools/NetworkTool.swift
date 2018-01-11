@@ -39,6 +39,25 @@ class NetworkTool {
             //回调结果
             finishedCallback(result)
         }
+    }
+    
+    class func getRequestWithURL(path :String,parameter:[String: Any]?, success: @escaping (_ result: Any) -> Void ,failure: @escaping (_ error: Error) -> Void ) -> Void {
         
+//        Alamofire.SessionManager.defaultHTTPHeaders.updateValue("application/json", forKey: "Accept")
+
+        //发送请求
+        Alamofire.request(path, method: .get, parameters: parameter).validate(contentType: ["application/json"]).responseJSON{
+            (response) in
+            
+            //获取结果
+            guard let result = response.result.value else{
+                print(response.result.error!)
+                failure(response.result.error!)
+                return
+            }
+            
+            //回调结果
+            success(result)
+        }
     }
 }

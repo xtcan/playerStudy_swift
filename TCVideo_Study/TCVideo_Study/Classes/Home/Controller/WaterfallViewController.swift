@@ -98,6 +98,7 @@ extension WaterfallViewController : UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let roomVc = RoomViewController()
+        roomVc.roomMsgModel = homeVM.homePageContentModels[indexPath.item]
         navigationController?.pushViewController(roomVc, animated: true)
     }
     

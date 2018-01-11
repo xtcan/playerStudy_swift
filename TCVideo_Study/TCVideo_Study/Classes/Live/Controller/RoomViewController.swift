@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import IJKMediaFramework
+
 
 private let kChatToolsViewHeight : CGFloat = 44
 
 class RoomViewController: UIViewController, Emitterable {
     
+    //MARK: 对外属性
+    //房间信息
+    var roomMsgModel : HomePageContentModel?
+    
     // MARK: 控件属性
     @IBOutlet weak var bgImageView: UIImageView!
     fileprivate lazy var giftListView : UIView = UIView()
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
+    
+    // MARK: 其他属性
+    fileprivate lazy var roomViewModel : RoomViewModel = RoomViewModel()
+    fileprivate var player : IJKFFMoviePlayerController?
     
     // MARK: 系统回调函数
     override func viewDidLoad() {
@@ -23,6 +33,8 @@ class RoomViewController: UIViewController, Emitterable {
         
         setupUI()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        //请求播放信息
+        requestPlayInfo()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,8 +46,57 @@ class RoomViewController: UIViewController, Emitterable {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        player?.shutdown()
+    }
 }
 
+// MARK:- 请求播放信息
+extension RoomViewController {
+    fileprivate func requestPlayInfo() {
+        if let roomid = roomMsgModel?.roomid, let uid = roomMsgModel?.uid {
+            print(roomid, uid)
+            roomViewModel.loadLiveURL(roomid, uid, {
+                self.setupPlayerView()
+            })
+        }
+    }
+
+    //设置播放器
+    func setupPlayerView() {
+        
+        //开启硬解码
+        let options = IJKFFOptions.byDefault()
+        options?.setOptionIntValue(1, forKey: "videotoolbox", of: kIJKFFOptionCategoryPlayer)
+        
+        // 0.关闭log
+        IJKFFMoviePlayerController.setLogReport(false)
+        
+        // 1.初始化播放器
+        let url = URL(string: roomViewModel.liveURL)
+        player = IJKFFMoviePlayerController(contentURL: url, with: options)
+        
+        // 2.设置播放器View的位置和尺寸
+        if roomMsgModel?.push == 1 {
+            let screenW = UIScreen.main.bounds.width
+            player?.view.frame = CGRect(x: 0, y: 150, width: screenW, height: screenW * 3 / 4)
+        } else {
+            player?.view.frame = view.bounds
+        }
+        
+        // 3.将view添加到控制器的view中
+        bgImageView.insertSubview(player!.view, at: 1)
+        
+        // 4.准备播放
+//        DispatchQueue.global().async {
+//            self.player?.prepareToPlay()
+//            self.player?.play()
+//        }
+        player?.prepareToPlay()
+    }
+    
+}
 
 // MARK:- 设置UI界面内容
 extension RoomViewController {
